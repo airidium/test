@@ -2,8 +2,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
+
+
+
 transaction_data = pd.read_csv(r'C:\Users\User\Desktop\InputFolder\transaction_data.csv')
-print(transaction_data)
+#print(transaction_data)
 # 5315 rows x 3 columns
 print(transaction_data.dtypes)
 transactions = transaction_data['transaction'].value_counts()
